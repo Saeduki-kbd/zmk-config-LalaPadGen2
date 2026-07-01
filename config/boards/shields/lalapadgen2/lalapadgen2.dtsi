@@ -235,3 +235,11 @@ status = "okay";
         irq-gpios = <&xiao_d 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 };
+
+/ {
+    trackpad_listener {
+        compatible = "zmk,input-listener";
+        device = <&iqs9151>;
+        status = "okay";
+    };
+};
